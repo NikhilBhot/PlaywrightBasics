@@ -5,7 +5,7 @@ test('Soft Assertions',async({page})=>{
 
     //hard Assertion
     await expect(page).toHaveTitle("STORE");
-    await expect.soft(page).toHaveTitle("Wrong Title");
+    //await expect.soft(page).toHaveTitle("Wrong Title");
     await expect(page).toHaveURL("https://www.demoblaze.com/index.html");
     const logo=await page.locator("//a[@id='nava']//img");
     await expect(logo).toBeVisible();

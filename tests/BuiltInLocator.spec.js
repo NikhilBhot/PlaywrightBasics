@@ -24,5 +24,5 @@ test('Built In Locator',async({page})=>{
     //getByTitle
 
     //getByTestId
-    await page.waitForTimeout(3000);
+    
 })
