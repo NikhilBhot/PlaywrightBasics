@@ -3,7 +3,8 @@ const{expect,test}=require('@playwright/test');
 
 test('Built In Locator',async({page})=>{
     await page.goto('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login');
-    //For Logo -getByAltText
+    //For Logo -getByAltTextgit push origin feature
+    await page.waitForSelector("//img[@alt='company-branding']");
     const logo=await page.getByAltText('company-branding');
     await expect(logo).toBeVisible();
 
